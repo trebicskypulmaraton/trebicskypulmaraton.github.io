@@ -195,6 +195,31 @@ body {
 }
 
 
+
+/*
+Nadpis rekordů změna mezery nad
+*/
+.rekordy-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.rekordy-heading h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #232d39;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.rekordy-heading h2 em {
+  font-style: normal;
+  color: #ed563b;
+}
+.rekordy-heading img {
+  margin: 20px auto;
+}
+
+
 /* 
 ---------------------------------------------
 header
@@ -610,10 +635,11 @@ banner
     object-fit: cover;
     z-index: -1;
 }
-
+/*
 #bg-video::-webkit-media-controls {
     display: none !important;
 }
+*/
 
 .video-overlay {
     position: absolute;
@@ -838,7 +864,7 @@ schedule
 --------------------------------------------- 
 */
 
-#schedule {
+#results {
   padding: 0px 0px 140px 0px;
   background-image: url(../images/cil.webp);
   background-position: center center;
@@ -846,26 +872,26 @@ schedule
   background-size: cover;
 }
 
-#schedule table {
+#results table {
   width: 100%;
   text-align: center;
   border: 1px solid #fff;
 }
 
-#schedule table tbody {
+#results table tbody {
   border-top: 1px solid #fff; 
 }
 
-#schedule table tbody tr {
+#results table tbody tr {
   border-bottom: 1px solid #fff;
 }
 
-#schedule table tbody tr td {
+#results table tbody tr td {
   border-right: 1px solid #fff;
   height: 100px;
 }
 
-#schedule table tr td {
+#results table tr td {
   color: #fff;
   font-size: 13px;
   text-transform: capitalize;
@@ -883,14 +909,23 @@ schedule
     transition: all 0.5s;
 }
 
-#schedule .filters {
-  margin-bottom: 40px;
+#results .filters {
+  margin-bottom: 10px;
 }
-#schedule .filters ul {
+#results .filters ul {
   padding: 0;
   text-align: center;
 }
-#schedule .filters ul li {
+#results .filters p{
+  position: relative;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+#results .filters ul li {
   list-style: none;
   display: inline;
   cursor: pointer;
@@ -906,41 +941,41 @@ schedule
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#schedule .filters ul li:after {
+#results .filters ul li:after {
   content: "/";
   margin-left: 10px;
   color: #fff;
 }
-#schedule .filters ul li:last-child {
+#results .filters ul li:last-child {
   margin-right: 0px;
 }
-#schedule .filters ul li:last-child::after {
+#results .filters ul li:last-child::after {
   display: none;
 }
-#schedule .filters ul li.active,
-#schedule .filters ul li:hover {
+#results .filters ul li.active,
+#results .filters ul li:hover {
   color: #ed563b;
 }
-#schedule .filters-content {
-  margin-top: 50px;
+#results .filters-content {
+  margin-top: 25px;
 }
-#schedule .filters-content .show {
+#results .filters-content .show {
   opacity: 1;
   visibility: visible;
   transition: all 350ms;
 }
-#schedule .filters-content .hide {
+#results .filters-content .hide {
   opacity: 0;
   visibility: hidden;
   transition: all 350ms;
 }
 
-#schedule a{
+#results a{
   text-decoration: none;
   color: #ffffff;
 }
 
-#schedule a:hover {
+#results a:hover {
   color: #ed563b;
 }
 
@@ -953,10 +988,13 @@ trainers
 */
 
 #trainers .trainer-item {
+  text-align: center;
   background-color: #fff;
+  transition: all ease-in-out 0.3s;
   border-radius: 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 40px;
+  box-shadow: 0 5px 90px 0 rgba(110, 123, 131, 0.05);
+  padding: 20px;
+
 }
 
 #trainers .trainer-item img {
@@ -973,6 +1011,10 @@ trainers
   margin-bottom: 10px;
 }
 
+#trainers .trainer-item h1 {
+  margin-top: 3px;
+}
+
 #trainers .trainer-item h4 {
   font-size: 19px;
   font-weight: 600;
@@ -984,25 +1026,6 @@ trainers
 #trainers .trainer-item p {
   margin-bottom: 20px;
 }
-
-#trainers .trainer-item ul.social-icons li {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-#trainers .trainer-item ul.social-icons li:last-child {
-  margin-right: 0px;
-}
-
-#trainers .trainer-item ul.social-icons li a {
-  color: #232d39;
-  transition: all .3s;
-}
-
-#trainers .trainer-item ul.social-icons li a:hover {
-  color: #ed563b;
-}
-
 
 /* 
 ---------------------------------------------
