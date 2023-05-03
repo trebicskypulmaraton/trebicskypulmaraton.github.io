@@ -994,7 +994,6 @@ trainers
   border-radius: 5px;
   box-shadow: 0 5px 90px 0 rgba(110, 123, 131, 0.05);
   padding: 20px;
-
 }
 
 #trainers .trainer-item img {
@@ -1025,6 +1024,11 @@ trainers
 
 #trainers .trainer-item p {
   margin-bottom: 20px;
+}
+
+#trainers .trainer-item:hover {
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* 
