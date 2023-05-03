@@ -992,6 +992,7 @@ trainers
   border-radius: 5px;
   box-shadow: 0 5px 90px 0 rgba(110, 123, 131, 0.05);
   padding: 20px;
+  margin-bottom: 1em;
 }
 
 #trainers .trainer-item img {
