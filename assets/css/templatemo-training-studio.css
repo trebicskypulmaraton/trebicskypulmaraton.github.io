@@ -855,6 +855,9 @@ Our Classes
   margin-bottom: 28px;
 }
 
+.tabs-content a {
+  color: #ed563b;
+}
 
 /* 
 ---------------------------------------------
@@ -1046,7 +1049,7 @@ contact
 
 #contact-us .contact-form {
   padding: 80px;
-  background-image: url(../images/contact-bg.jpg);
+  /*background-image: url(../images/contact-bg.jpg);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
