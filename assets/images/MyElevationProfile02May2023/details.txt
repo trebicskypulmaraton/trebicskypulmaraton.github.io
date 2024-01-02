@@ -1,6 +1,0 @@
-Distance                           51.30km
-Walking Time                       1290min
-Offroad Cycling Time               720min
-Altitude Difference                3450.00m
-Normal Cycling Time                840min
-Race Cycling Time                  495min
